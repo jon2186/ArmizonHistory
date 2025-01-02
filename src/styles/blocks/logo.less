@@ -1,0 +1,30 @@
+.logo {
+    display: block;
+    cursor: pointer;
+}
+
+.logo__image {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+@media (min-width: @notebook-width) and (max-width: (@desktop-width - 1px)) {
+    .logo__image {
+        height: 36px;
+        width: auto;
+    }
+}
+
+@media (min-width: @tablet-width) and (max-width: (@notebook-width - 1px)) {
+    .logo__image {
+        height: 36px;
+        width: auto;
+    }
+}
+
+@media (min-width: @min-mobile-width) and (max-width: (@mobile-width - 1px)) {
+    .logo {
+        display: none;
+    }
+}

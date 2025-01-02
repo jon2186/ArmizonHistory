@@ -1,0 +1,73 @@
+.container {
+    margin: 0 auto;
+  }
+
+  /* Стили для маленьких мобильных устройств */
+@media (min-width: @min-mobile-width) and (max-width: (@mobile-width - 1px)) {
+    /* Стили для экранов от @min-mobile-width до @mobile-width -1*/
+    .container {
+      max-width: 95%;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  }
+
+  /* Стили для больших мобильных устройств и маленьких планшетов */
+  @media (min-width: @mobile-width) and (max-width: (@min-tablet-width - 1px)) {
+    /* Стили для экранов от @mobile-width до @min-tablet-width -1*/
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+  }
+
+  /* Стили для планшетов */
+  @media (min-width: @min-tablet-width) and (max-width: (@tablet-width - 1px)) {
+    /* Стили для экранов от @min-tablet-width до @tablet-width -1*/
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  }
+
+  /* Стили для ноутбуков */
+  @media (min-width: @tablet-width) and (max-width: (@notebook-width - 1px)) {
+    /* Стили для экранов от @tablet-width до @notebook-width -1*/
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 25px;
+    }
+  }
+
+  /* Стили для больших экранов */
+  @media (min-width: @notebook-width) and (max-width: (@desktop-width - 1px)) {
+    /* Стили для экранов от @notebook-width до @desktop-width -1*/
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+  }
+
+  /* Стили для очень больших экранов */
+  @media (min-width: @desktop-width) and (max-width: (@max-desktop-width - 1px)) {
+    /* Стили для экранов от @desktop-width до @max-desktop-width -1*/
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 35px;
+    }
+  }
+
+  /* Стили для очень больших экранов */
+  @media (min-width: @max-desktop-width) {
+    /* Стили для экранов @max-desktop-width и больше */
+    .container {
+      max-width: 1920px;
+      margin: 0 auto;
+      padding: 0 92px;
+    }
+  }

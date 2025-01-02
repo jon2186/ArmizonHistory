@@ -1,0 +1,227 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__background {
+    height: 60px;
+    background-color: @main-blue;
+    position: relative;
+}
+
+.nav__menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 40px;
+    height: 24px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.nav__bar {
+    height: 4px;
+    width: 100%;
+    background-color: @main-white;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+}
+
+.nav__bar:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.nav__menu-icon--active .nav__bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.nav__menu-icon--active .nav__bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav__menu-icon--active .nav__bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.nav__menu-list {
+    display: flex;
+}
+
+.nav__menu-link {
+    display: block;
+    color: @main-white;
+    font-size: 1.125rem;
+    cursor: pointer;
+    padding: 21px;
+}
+
+.nav__menu-link:hover {
+    color: @text-hover;
+    background-color: @bg-hover;
+}
+
+.nav__menu-link--active {
+    color: @text-active;
+    background-color: @bg-active;
+    position: relative;
+}
+
+.nav__menu-link--active::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: @main-white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+}
+
+.nav__menu-link--active:hover {
+    color: @text-active;
+    background-color: @bg-active;
+}
+
+.nav__menu-link--active:hover::after {
+    width: 100%;
+}
+
+.nav__search-container {
+    position: relative;
+}
+
+.nav__search-input {
+    height: 36px;
+    padding: 0 40px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: @text-active;
+}
+
+.nav__search-input::placeholder {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    color: @text-placeholder;
+}
+
+.nav__search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 10px;
+}
+
+.nav__search-icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    color: @main-blue;
+}
+
+@media (min-width: @notebook-width) and (max-width: (@desktop-width - 1px)) {
+    .nav__menu-link {
+        font-size: 1rem;
+        padding: 22px 16px;
+    }
+
+    .nav__search-input {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: @tablet-width) and (max-width: (@notebook-width - 1px)) {
+    .nav__menu-link {
+        font-size: 1rem;
+        padding: 22px 16px;
+    }
+
+    .nav__menu-icon {
+        display: flex;
+    }
+
+    .nav__search-input {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: @min-tablet-width) and (max-width: (@tablet-width - 1px)) {
+    .nav {
+        height: 60px;
+    }
+
+    .nav__menu-list {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .nav__menu-link {
+        font-size: 1rem;
+        padding: 22px 16px;
+        background: @main-blue;
+        text-align: center;
+    }
+
+    .nav__menu-icon {
+        display: flex;
+    }
+
+    .nav__search-input {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: @mobile-width) and (max-width: (@min-tablet-width - 1px)) {
+    .nav {
+        height: 60px;
+    }
+
+    .nav__menu-list {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .nav__menu-link {
+        font-size: 1rem;
+        padding: 22px 16px;
+        background: @main-blue;
+        text-align: center;
+    }
+
+    .nav__menu-icon {
+        display: flex;
+    }
+
+    .nav__search-input {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: @min-mobile-width) and (max-width: (@mobile-width - 1px)) {
+    .nav__background {
+        height: auto;
+    }
+
+    .nav__menu-list {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .nav__menu-icon {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .nav__search-container {
+        margin: 10px 0;
+    }
+}

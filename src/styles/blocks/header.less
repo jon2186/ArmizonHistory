@@ -1,0 +1,243 @@
+.header {
+    position: relative;
+    background-image: url(/img/background/header-dekstop-large.webp);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: right;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(48deg, rgba(255, 254, 254, 0.8) 0%, rgba(255, 254, 254, 0.4) 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.8) 99.32%);
+}
+
+.header__wrapper {
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    margin: auto 0;
+    position: relative;
+    font-family: Slavianskiy, Arial, sans-serif;
+    font-size: 4.25rem;
+    line-height: 1.2;
+    color: @main-blue;
+    width: 760px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.header__title::first-letter {
+    font-size: 6rem;
+    color: rgb(255, 0, 0);
+}
+
+.header__quote {
+    margin-top: 40px;
+    position: relative;
+}
+
+.header__quote-text {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: @main-blue;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.header__quote-author {
+    position: absolute;
+    right: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: @main-blue;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: @desktop-width) and (max-width: (@max-desktop-width - 1px)) {
+    .header__title {
+        width: 580px;
+        font-size: 3.25rem;
+        line-height: 1.1;
+
+    }
+
+    .header__title::first-letter {
+        font-size: 5rem;
+    }
+
+    .header__quote-text {
+        font-size: 1.75rem;
+    }
+  }
+
+@media (min-width: @notebook-width) and (max-width: (@desktop-width - 1px)) {
+    .header {
+        position: relative;
+        background-image: url(/img/background/header-notebook.webp);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: right;
+    }
+
+    .header__title {
+        width: 450px;
+        font-size: 2.5rem;
+        line-height: 1.1;
+
+    }
+
+    .header__title::first-letter {
+        font-size: 3rem;
+    }
+
+    .header__quote-text {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .header__quote-author {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: @tablet-width) and (max-width: (@notebook-width - 1px)) {
+    .header {
+        position: relative;
+        background-image: url(/img/background/header-notebook.webp);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: right;
+    }
+
+    .header__wrapper {
+        height: 260px;
+    }
+
+    .header__title {
+        width: 410px;
+        font-size: 2.3rem;
+        line-height: 1.1;
+
+    }
+
+    .header__title::first-letter {
+        font-size: 2.5rem;
+    }
+
+    .header__quote-text {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .header__quote-author {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: @min-tablet-width) and (max-width: (@tablet-width - 1px)) {
+    .header {
+        position: relative;
+        background-image: url(/img/background/header-tablet.webp);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: right;
+    }
+
+    .header__wrapper {
+        height: 200px;
+    }
+
+    .header__title {
+        width: 340px;
+        font-size: 1.9rem;
+        line-height: 1.1;
+
+    }
+
+    .header__title::first-letter {
+        font-size: 2rem;
+    }
+
+    .header__quote-text {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .header__quote-author {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: @mobile-width) and (max-width: (@min-tablet-width - 1px)) {
+    .header {
+        position: relative;
+        background-image: url(/img/background/header-tablet.webp);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: right;
+    }
+
+    .header__wrapper {
+        height: 140px;
+    }
+
+    .header__title {
+        width: 232px;
+        font-size: 1.3rem;
+        line-height: 1.1;
+
+    }
+
+    .header__title::first-letter {
+        font-size: 1.6rem;
+    }
+
+    .header__quote-text {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .header__quote-author {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: @min-mobile-width) and (max-width: (@mobile-width - 1px)) {
+    .header {
+        position: relative;
+        background-image: url(/img/background/header-mobile.webp);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: top right;
+    }
+
+    .header__wrapper {
+        height: 100px;
+        justify-content: center;
+    }
+
+    .header__title {
+        width: 268px;
+        font-size: 1.5rem;
+        line-height: 1.2;
+
+    }
+
+    .header__title::first-letter {
+        font-size: 1.7rem;
+    }
+
+    .header__quote {
+        display: none;
+    }
+}

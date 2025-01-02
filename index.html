@@ -3,12 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Портал по истории Армизонского района, поиске своих корней, составления родословной и архивным материалам">
+    <meta name="keywords" content="Армизон, архивы, родословная, история, поиски корней, краеведение">
+    <meta name="author" content="Евгений Морозов">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Армизонский исторический портал</title>
+    <title>Краеведческий портал "Армизонские просторы"</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicons/apple-icon.png" sizes="180x180">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <script src="/js/menu.js" defer></script>
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h1 class="header__title">Краеведческий портал "Армизонские просторы"</h1>
+                <div class="header__quote">
+                    <blockquote class="header__quote-text">“Полей простор, озер прохлада,<br> И деревеньки затерялись
+                        между них...”
+                    </blockquote>
+                    <cite class="header__quote-author">(В. Мелешко)</cite>
+                </div>
+            </div>
+        </div>
+        <div class="nav__background">
+            <div class="container">
+                <nav class="nav">
+                    <a href="/" class="logo" id="logo"><img src="/img/logo/header-logo.svg" width="165" height="40"
+                            alt="Логотип сайта" class="logo__image"></a>
+                    <ul class="nav__menu-list">
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link nav__menu-link--active">Главная</a>
+                        </li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Новости</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Статьи</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Библиотека</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Краеведение</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Контакты</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">О портале</a></li>
+                    </ul>
+                    <button class="nav__menu-icon">
+                        <span class="nav__bar"></span>
+                        <span class="nav__bar"></span>
+                        <span class="nav__bar"></span>
+                    </button>
+                    <div class="nav__search-container" id="search-container">
+                        <form class="nav__search-form" action="/search" method="GET">
+                            <label for="search" class="visually-hidden">Поиск</label>
+                            <input type="text" id="search" class="nav__search-input" placeholder="Поиск..."
+                                aria-label="Поиск">
+                            <button type="submit" class="nav__search-button" aria-label="Поиск" title="Меню">
+                                <svg class="nav__search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Поиск</title>
+                                    <path
+                                        d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z"
+                                        stroke="#0A5794" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21 21L15 15" stroke="#0A5794" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
