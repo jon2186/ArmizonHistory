@@ -1,0 +1,25 @@
+.pagination__list {
+    display: flex;
+}
+
+.pagination__item:not(:last-child) {
+    margin-right: 3px;
+}
+
+.pagination__link {
+    padding: 3px 5px;
+    border: 1px solid @main-gray;
+    cursor: pointer;
+    color: @main-blue;
+}
+
+.pagination__link:hover {
+    border: 1px solid @secondary-text;
+    color: @text-active;
+}
+
+@media (min-width: @min-mobile-width) and (max-width: (@mobile-width - 1px)) {
+    .pagination {
+        display: none;
+    }
+}

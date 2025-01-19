@@ -1,0 +1,131 @@
+.news {
+    display: flex;
+    border-bottom: 1px solid @main-gray;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.news__link {
+    min-width: 240px;
+    margin-right: 20px;
+}
+
+.news__image {
+    border-radius: 10px;
+}
+
+.news__content {
+    width: 1163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news__title {
+    font-size: 2rem;
+    color: @main-blue;
+    margin-bottom: 15px;
+}
+
+.news__text {
+    font-size: 1.125rem;
+    color: @main-text;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.news__link-text {
+    color: @main-red;
+}
+
+.news__date {
+    color: @secondary-text;
+}
+
+@media (min-width: @notebook-width) and (max-width: (@desktop-width - 1px)) {
+    .news__title {
+        font-size: 1.75rem;
+    }
+
+    .news__link {
+        min-width: 180px;
+    }
+  }
+
+@media (min-width: @tablet-width) and (max-width: (@notebook-width - 1px)) {
+    .news__title {
+        font-size: 1.75rem;
+    }
+
+    .news__link {
+        min-width: 180px;
+    }
+}
+
+@media (min-width: @min-tablet-width) and (max-width: (@tablet-width - 1px)) {
+    .news {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news__title {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .news__link {
+        margin-bottom: 15px;
+    }
+
+    .news__image {
+        width: 100%;
+    }
+}
+
+@media (min-width: @mobile-width) and (max-width: (@min-tablet-width - 1px)) {
+    .news {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .news__text {
+        font-size: 1rem;
+    }
+
+    .news__link {
+        margin-bottom: 15px;
+    }
+
+    .news__image {
+        width: 100%;
+    }
+}
+
+@media (min-width: @min-mobile-width) and (max-width: (@mobile-width - 1px)) {
+    .news {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .news__text {
+        font-size: 1rem;
+    }
+
+    .news__link {
+        margin-bottom: 15px;
+    }
+
+    .news__image {
+        width: 100%;
+    }
+}

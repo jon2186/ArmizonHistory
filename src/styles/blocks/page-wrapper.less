@@ -1,0 +1,18 @@
+.page-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: @mobile-width) and (max-width: (@min-tablet-width - 1px)) {
+    .page-wrapper {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+  }
+
+@media (min-width: @min-mobile-width) and (max-width: (@mobile-width - 1px)) {
+.page-wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+}

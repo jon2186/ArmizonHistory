@@ -1,0 +1,25 @@
+.main {
+    border-top: 1px solid @main-gray;
+    margin-bottom: 50px;
+    min-width: 300px;
+}
+
+.main__text {
+    font-size: 1.125rem;
+    margin: 20px 20px 40px 20px;
+    padding-bottom: 20px;
+    color: @main-text;
+    line-height: 1.5rem;
+    border-bottom: 1px solid @main-gray;
+}
+
+@media (min-width: @min-mobile-width) and (max-width: (@mobile-width - 1px)) {
+    .main {
+        margin-bottom: 10px;
+    }
+
+    .main__text {
+        font-size: 1rem;
+        text-align: center;
+    }
+}

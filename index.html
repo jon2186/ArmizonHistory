@@ -17,6 +17,10 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="/dist/css/style.css">
     <script src="/js/menu.js" defer></script>
+    <script src="/js/login.js" defer></script>
+    <script src="/js/aside.js" defer></script>
+    <script src="/js/scroll-to-top.js" defer></script>
+    <script src="/js/cookie-banner.js" defer></script>
 </head>
 
 <body>
@@ -75,6 +79,195 @@
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="top-bar">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a><img
+                            src="/img/icons/right-arrow.svg" alt="Стрелка" class="breadcrumbs__item-arrow"></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Раздел</a><img
+                            src="/img/icons/right-arrow.svg" alt="Стрелка" class="breadcrumbs__item-arrow"></li>
+                    <li class="breadcrumbs__item breadcrumbs__item--active" aria-current="page">Текущая страница</li>
+                </ol>
+            </nav>
+            <div class="login">
+                <img src="/img/icons/login-icon.svg" alt="Войти" class="login__icon">
+                <span class="login__text">Войти</span>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <h2 class="page-wrapper__title visually-hidden">Главная страница</h2>
+            <aside class="aside">
+                <section class="aside__archive">
+                    <h3 class="aside__title">Архивные материалы</h3>
+                    <nav class="aside__nav">
+                        <ul class="aside__list">
+                            <li class="aside__item"><a class="aside__link" href="#1">Меню 1</a></li>
+                            <li class="aside__item"><a class="aside__link" href="#2">Меню 2</a></li>
+                            <li class="aside__item"><a class="aside__link" href="#3">Меню 3</a></li>
+                            <li class="aside__item"><a class="aside__link" href="#4">Меню 4</a></li>
+                            <li class="aside__item"><a class="aside__link" href="#5">Меню 5</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="aside__links">
+                    <h3 class="aside__title">Полезные ссылки</h3>
+                    <ul class="aside__links-list">
+                        <li class="aside__links-item">
+                            <a class="aside__link-item" href="https://prosiberia.tsu.ru/">Проект "PRO СИБИРЬ"</a>
+                        </li>
+                        <li class="aside__links-item">
+                            <a class="aside__link-item" href="https://siberians.online/">Проект «Сибиряки вольные и
+                                невольные»</a>
+                        </li>
+                        <li class="aside__links-item">
+                            <a class="aside__link-item" href="https://rpsc.ru/">Русская Православная Старообрядческая
+                                Церковь</a>
+                        </li>
+                        <li class="aside__links-item">
+                            <a class="aside__link-item" href="https://ural-kraeved.ru/">Сайт "Урал. Краеведение"</a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <main class="main">
+                <p class="main__text">Добро пожаловать на краеведческий портал "Армизонские просторы"! Здесь вы сможете
+                    почитать интересные статьи о крае, узнать о достопримечательностях и интересных людях района. На
+                    сайте можно найти информацию о своих предках.
+                </p>
+                <article class="news">
+                    <a href="#" class="news__link">
+                        <img class="news__image" loading="lazy" width="240" height="180" decoding="async"
+                            src="/img/news/2025/1/news-img_12.01.2025.webp" alt="Краткое описание изображения новости"
+                            title="Краткое описание изображения новости">
+                    </a>
+                    <div class="news__content">
+                        <a href="#">
+                            <h3 class="news__title">Краеведческий портал запущен и начинает свою работу</h3>
+                        </a>
+                        <p class="news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid
+                            quae, quo reiciendis recusandae pariatur odio omnis laudantium, optio eum, doloremque
+                            consectetur. Veritatis repellendus, ducimus deleniti ipsum molestias at ratione.
+                            <a class="news__link-text" href="#">Подробнее...</a>
+                        </p>
+                        <time datetime="2025-01-12" class="news__date">12 января 2025</time>
+                    </div>
+                </article>
+                <article class="news">
+                    <a href="#" class="news__link">
+                        <img class="news__image" loading="lazy" width="240" height="180" decoding="async"
+                            src="/img/news/2025/1/news-img_12.01.2025.webp" alt="Краткое описание изображения новости"
+                            title="Краткое описание изображения новости">
+                    </a>
+                    <div class="news__content">
+                        <a href="#">
+                            <h3 class="news__title">Краеведческий портал запущен и начинает свою работу</h3>
+                        </a>
+                        <p class="news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid
+                            quae, quo reiciendis recusandae pariatur odio omnis laudantium, optio eum, doloremque
+                            consectetur. Veritatis repellendus, ducimus deleniti ipsum molestias at ratione.
+                            <a class="news__link-text" href="#">Подробнее...</a>
+                        </p>
+                        <time datetime="2025-01-12" class="news__date">12 января 2025</time>
+                    </div>
+                </article>
+                <article class="news">
+                    <a href="#" class="news__link">
+                        <img class="news__image" loading="lazy" width="240" height="180" decoding="async"
+                            src="/img/news/2025/1/news-img_12.01.2025.webp" alt="Краткое описание изображения новости"
+                            title="Краткое описание изображения новости">
+                    </a>
+                    <div class="news__content">
+                        <a href="#">
+                            <h3 class="news__title">Краеведческий портал запущен и начинает свою работу</h3>
+                        </a>
+                        <p class="news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid
+                            quae, quo reiciendis recusandae pariatur odio omnis laudantium, optio eum, doloremque
+                            consectetur. Veritatis repellendus, ducimus deleniti ipsum molestias at ratione.
+                            <a class="news__link-text" href="#">Подробнее...</a>
+                        </p>
+                        <time datetime="2025-01-12" class="news__date">12 января 2025</time>
+                    </div>
+                </article>
+                <nav class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link pagination__link--prev"
+                                aria-label="Предыдущая страница">
+                                <svg width="15" height="8" viewBox="0 0 15 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H15V3.5H1V4.5Z"
+                                        fill="#0A5794" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link pagination__link--active" title="Страница 1">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 2">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 3">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 4">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 5">5</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 6">6</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 7">7</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 8">8</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 9">9</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" title="Страница 10">10</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link pagination__link--next" aria-label="Следующая страница">
+                                <svg width="15" height="8" viewBox="0 0 15 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464466C10.9763 0.269204 10.6597 0.269204 10.4645 0.464466C10.2692 0.659728 10.2692 0.976311 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM0 4.5H14V3.5H0V4.5Z"
+                                        fill="#0A5794" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" aria-label="Последняя страница">В конец</a>
+                        </li>
+                    </ul>
+                </nav>
+            </main>
+        </div>
+    </div>
+    <a id="scrollToTopBtn" class="scroll-to-top" title="Вернуться наверх" aria-label="Наверх">
+        <svg class="scroll-to-top__img" width="60" height="60" viewBox="0 0 60 60" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="scroll-to-top__path"
+                d="M30 13.3333L46.6667 30H36.6667V43.3333H23.3333V30H13.3333L30 13.3333ZM53.3333 60H6.66667C4.89856 60 3.20286 59.2976 1.95262 58.0474C0.702379 56.7971 0 55.1014 0 53.3333V6.66667C0 4.89856 0.702379 3.20286 1.95262 1.95262C3.20286 0.702379 4.89856 0 6.66667 0H53.3333C55.1014 0 56.7971 0.702379 58.0474 1.95262C59.2976 3.20286 60 4.89856 60 6.66667V53.3333C60 55.1014 59.2976 56.7971 58.0474 58.0474C56.7971 59.2976 55.1014 60 53.3333 60ZM53.3333 53.3333V6.66667H6.66667V53.3333H53.3333Z"
+                fill="#D8D8D8" />
+        </svg>
+    </a>
+    <div class="cookie-banner" id="cookie-banner">
+        <span class="cookie-banner__text">
+            Продолжая использовать наш сайт, вы даете согласие на обработку файлов "cookie",
+            которые обеспечивают корректную работу сайта.
+        </span>
+        <button class="cookie-banner__button" id="accept-cookies">
+            OK
+        </button>
+    </div>
 </body>
 
 </html>

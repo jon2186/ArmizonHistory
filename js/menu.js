@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchContainer = document.getElementById('search-container'); // Получаем контейнер формы поиска
     const menuList = document.querySelector('.nav__menu-list'); // Получаем элемент ul с классом nav__menu-list
     const nav = document.querySelector('.nav'); // Получаем элемент nav с классом nav
+    const topBar = document.querySelector('.top-bar');
 
     const isSmallScreen = window.matchMedia('(max-width: 1023px)');
     const isMediumScreen = window.matchMedia('(max-width: 1200px)');
@@ -65,15 +66,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (isMenuActive) {
             // Если меню активно, скрываем логотип, форму поиска и показываем первые 4 элемента
-            if (logo) logo.style.display = 'block';
+            if (window.innerWidth > 480) {
+                if (logo) logo.style.display = 'block';
+                console.log('1111');
+            }
             if (searchContainer) searchContainer.classList.remove('hidden');
             if (window.innerWidth < 1024) {
                 if (nav) nav.style.alignItems = 'center';
                 if (menuIcon) menuIcon.style.marginTop = '';
+                if (topBar) topBar.style.marginTop = '0';
             }
-            if (window.innerWidth < 480) {
-                if (logo) logo.style.display = 'none';
-            }
+
             // Скрываем все элементы меню опять, кроме первых 4
             updateMenuVisibility();
         } else {
@@ -85,10 +88,17 @@ document.addEventListener('DOMContentLoaded', function () {
             menuItems.forEach(item => {
                 item.classList.remove('hidden'); // Показываем все элементы
             });
-            if (menuList) menuList.classList.remove('visually-hidden');
+            if (menuList) {
+                menuList.classList.remove('visually-hidden');
+                menuList.style.display = 'flex';
+            }
             if (window.innerWidth < 1024) {
                 if (nav) nav.style.alignItems = 'flex-start';
                 if (menuIcon) menuIcon.style.marginTop = '18px';
+                if (topBar) topBar.style.marginTop = '400px';
+            }
+            if (window.innerWidth < 480) {
+                if (topBar) topBar.style.marginTop = '0';
             }
         }
 
